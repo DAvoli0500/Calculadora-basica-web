@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FormúlaX</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="shortcut icon" href="./imgs/calculadora.png" type="image/x-icon">
+</head>
+<body>
+    <div class="fundo">
+        <h1 id="nome">FormúlaX</h1>
+        
+        <div class="calculadora">
+            <h2>Calculadora</h2>
+            <p id="resultado"></p>
+            <table>
+                <tr>
+                    <td><button class="botao" onclick="isert('')">C</button></td>
+                    <td><button class="botao" onclick="isert('')"><</button></td>
+                    <td><button class="botao" onclick="isert('')">/</button></td>
+                    <td><button class="botao" onclick="isert('')">X</button></td>
+                </tr>
+                <tr>
+                    <td><button class="botao" onclick="isert('7')">7</button></td>
+                    <td><button class="botao" onclick="isert('8')">8</button></td>
+                    <td><button class="botao" onclick="isert('9')">9</button></td>
+                    <td><button class="botao" onclick="isert('')">-</button></td>
+                </tr>
+                <tr>
+                    <td><button class="botao" onclick="isert('4')">4</button></td>
+                    <td><button class="botao" onclick="isert('5')">5</button></td>
+                    <td><button class="botao" onclick="isert('6')">6</button></td>
+                    <td><button class="botao" onclick="isert('')">+</button></td>
+                </tr>
+                <tr>
+                    <td><button class="botao" onclick="isert('1')">1</button></td>
+                    <td><button class="botao" onclick="isert('2')">2</button></td>
+                    <td><button class="botao" onclick="isert('3')">3</button></td>
+                    <td rowspan="2"><button class="botao" id="igual" onclick="isert('')">=</button></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><button class="botao" id="zero" onclick="isert('')">0</button></td>
+                    <td><button class="botao" onclick="isert('')">.</button></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <script src="./js/script.js"></script>
+</body>
+</html>
